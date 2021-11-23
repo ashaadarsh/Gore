@@ -6,10 +6,11 @@ Library                   QWeb
 
 *** Variables ***
 ${BROWSER}               chrome
-${username}              chandri@guest.wlgore.com.val
-${login_url}             https://val-wlgore.cs172.force.com/Gasket/s/login           # Salesforce instance. NOTE: Should be overwritten in CRT variables
-${home_url}              ${login_url}
+${login_url}             https://val-wlgore.cs172.force.com/Gasket/s/login    
+${username}              chandri@guest.wlgore.com.val       # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${password}              Lem#12mel#
+${home_url}              ${login_url}
+
 
 
 *** Keywords ***
@@ -27,7 +28,7 @@ Login
     [Documentation]      Login to Salesforce instance
     GoTo                 ${login_url}
     TypeText             Email                    ${username}
-    TypeText             Password                  ${password}
+    TypeText             Password                 ${password}
     ClickText            Sign In
 
 
