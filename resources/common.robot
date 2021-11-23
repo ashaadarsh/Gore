@@ -27,8 +27,8 @@ Login
     [Documentation]      Login to Salesforce instance
     GoTo                 ${login_url}
     TypeText             Email                    ${username}
-    TypeText             Password                    ${password}
-    ClickText            Log In
+    TypeText             Password                  ${password}
+    ClickText            Sign In
 
 
 Home
