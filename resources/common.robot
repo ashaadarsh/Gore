@@ -27,9 +27,14 @@ End suite
 Login
     [Documentation]      Login to Salesforce instance
     GoTo                 ${login_url}
-    TypeText             Email                    ${username}
-    TypeText             Password                 ${password}
+    TypeText             Email                        chandri@guest.wlgore.com.val
+    TypeSecret           Password                     Lem#12mel#
     ClickText            Sign In
+    VerifyText           WELCOME TO GORE® GASKETS ONLINE STORE
+
+   # TypeText             Email                    ${username}
+   # TypeText             Password                 ${password}
+   # ClickText            Sign In
 
 
 Home
